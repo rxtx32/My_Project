@@ -12,12 +12,11 @@ body.dark {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: var(--bg);
   color: var(--text);
 }
 
-/* Header */
 header {
   text-align: center;
   padding: 20px;
@@ -31,22 +30,19 @@ button {
   cursor: pointer;
 }
 
-/* Sections */
 section {
   padding: 20px;
-  margin: 15px;
+  margin: 10px;
   background: var(--card);
   border-radius: 10px;
 }
 
-/* Grid layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 10px;
 }
 
-/* Cards */
 .card {
   padding: 20px;
   background: #ddd;
@@ -54,35 +50,16 @@ section {
   text-align: center;
 }
 
-/* Form */
 form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: auto;
 }
 
 input, textarea {
   margin: 8px 0;
   padding: 10px;
-  font-size: 14px;
 }
 
-button[type="submit"] {
-  background: #333;
-  color: white;
-  border: none;
-}
-
-/* Success message */
-#successMsg {
-  display: none;
-  text-align: center;
-  color: green;
-  margin-top: 10px;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -90,7 +67,7 @@ footer {
   color: white;
 }
 
-/* Mobile */
+/* Responsive */
 @media (max-width: 600px) {
   header h1 {
     font-size: 22px;
