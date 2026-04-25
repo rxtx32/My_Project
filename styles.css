@@ -1,0 +1,98 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #000;
+  --card: #fff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #fff;
+  --card: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 15px;
+  background: var(--card);
+  border-radius: 10px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+/* Cards */
+.card {
+  padding: 20px;
+  background: #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background: #333;
+  color: white;
+  border: none;
+}
+
+/* Success message */
+#successMsg {
+  display: none;
+  text-align: center;
+  color: green;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+}

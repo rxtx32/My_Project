@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer</p>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am learning web development and cloud deployment.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">Project 1</div>
+      <div class="card">Project 2</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+
+    <!-- 🔴 REPLACE xxxxabcd with your real Formspree ID -->
+    <form id="contactForm" action="https://formspree.io/f/xxxxabcd" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="successMsg">✅ Message sent successfully!</p>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
